@@ -25,18 +25,18 @@ public class Transaksi {
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
 
         System.out.println("===============================");
-        System.out.println("ID Transaksi   : " + tr.idTransaksi);
+        System.out.println("ID Transaksi   : " + tr.id);
         System.out.println("Nama Kasir     : " + tr.namaKasir);
         System.out.println("Tanggal        : " + dateFormat.format(tr.tanggal));
     }
 
     public static class transaksi {
-        public String idTransaksi;
+        public String id;
         public String namaKasir;
         public Date tanggal;
 
-        public transaksi(String idTransaksi, String namaKasir, Date tanggal) {
-            this.idTransaksi = idTransaksi;
+        public transaksi(String id, String namaKasir, Date tanggal) {
+            this.id = id;
             this.namaKasir = namaKasir;
             this.tanggal = tanggal;
         }
